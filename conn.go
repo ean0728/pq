@@ -58,7 +58,7 @@ func (d Driver) Open(name string) (driver.Conn, error) {
 }
 
 func init() {
-	sql.Register("postgres", &Driver{})
+	sql.Register("highgo", &Driver{})
 }
 
 type parameterStatus struct {
